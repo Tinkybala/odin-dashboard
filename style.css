@@ -121,12 +121,29 @@
 .header-top{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
     flex: 1 1 0;
 }
 
 .search-icon{
     height: 20px;
+}
+
+#search-bar{
+    outline: 0px white;
+    border: 3px var(--grey);
+    border-style: solid;
+    border-radius: 5px;
+}
+
+#search-bar:hover{
+    border-color: black;
+}
+
+#search-bar:focus{
+    border-color: black;
 }
 
 .header-top-right .profile-picture{
@@ -152,6 +169,7 @@ input{
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 30px;
 }
 
 .bell-icon{
@@ -162,17 +180,21 @@ input{
 .header-top-right .name{
     display: flex;
     align-items: center;
+    padding-right: 20px;
 }
 
 .header-bottom{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
     flex: 1 1 0;
 }
 
 .header-bottom-left{
     display: grid;
-    grid-template: 1fr 1fr / 1fr 4fr;
+    grid-template: 1fr 1fr / 1fr 2fr;
+    column-gap: 15px;
 }
 
 .header-bottom-left .profile-picture{
@@ -181,6 +203,9 @@ input{
 
 .header-bottom-left .hello{
     grid-area: 1/2/2/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header-bottom-left .name{
@@ -189,8 +214,16 @@ input{
 
 button{
     border-radius: 8px;
-    background-color: var(--default-blue);
+    background-color: var(--petrol);
     color: white;
+    padding-inline: 15px;
+}
+
+button:hover{
+    border: 5px var(--petrol);
+    border-style: solid;
+    outline: 3px black;
+    outline-style: solid;
 }
 
 
